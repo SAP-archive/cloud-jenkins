@@ -61,6 +61,9 @@ cd ..
 
 # save space by deleting the workspace
 rm -rf *
+
+# set the proxy for git in $HOME/.gitconfig
+$HOME/git/bin/git config --global http.proxy http://proxy-trial.od.sap.biz:8080
 </command>
     </hudson.tasks.Shell>
   </builders>

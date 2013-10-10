@@ -27,7 +27,7 @@ public class CloudJenkinsPlugin extends Plugin {
     private static CloudJenkinsPlugin instance;
 
     private String includes =
-        ".jenkins/*.xml,.jenkins/jobs/*/config.xml,.jenkins/plugins/*.jpi,.jenkins/secrets/**,.ssh/*,.m2/settings.xml";
+        ".jenkins/*.xml,.jenkins/jobs/*/config.xml,.jenkins/plugins/*.jpi,.jenkins/secrets/**,.ssh/*,.m2/settings.xml,.gitconfig";
     private String excludes = ".jenkins/plugins/cloud-jenkins.jpi";
 
     @Override
