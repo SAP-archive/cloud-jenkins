@@ -1,0 +1,57 @@
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout"  xmlns:f="/lib/form"  xmlns:st="jelly:stapler">
+    <l:layout permission="${app.ADMINISTER}" norefresh="true">
+        <st:include it="${app}" page="sidepanel.jelly"/>
+        <l:main-panel>
+            <h1>${it.displayName}</h1>
+            <f:form name="upload" method="post" action="upload" enctype="multipart/form-data">
+                <f:section title="Upload files to Jenkins">
+                    <f:entry title="Archive with files to be uploaded" help="/plugin/cloud-jenkins-plugin/help/upload_to_user_home.html">
+                        <input type="file" name="jenkinsConfiguration.zip" size="200"/>
+                    </f:entry>
+                    <f:entry title="">
+                        <f:submit value="Upload"/>
+                    </f:entry>
+                </f:section>
+            </f:form>
+            <f:form name="delete" method="post" action="listFilesToDelete" enctype="multipart/form-data">
+                <f:section title="Delete files from Jenkins">
+                    <f:entry title="Path to a file or folder" field="path" help="/plugin/cloud-jenkins-plugin/help/delete.html">
+                        <f:textbox/>
+                    </f:entry>
+                    <f:entry title="">
+                        <f:submit name="deleteButton" value="Delete ..."/>
+                    </f:entry>
+                </f:section>
+            </f:form>
+            <f:form name="save" method="post" action="listFilesToSave" enctype="multipart/form-data">
+                <f:section title="Store Jenkins configuration in SAP HANA Cloud document service">
+                    <f:description>The selected files are stored in the SAP HANA Cloud document service. When Jenkins application is restarted, the stored configuration is reloaded from the SAP HANA Cloud document service.</f:description>
+                    <f:entry title="Includes" field="includes"  help="/plugin/cloud-jenkins-plugin/help/includes.html">
+                        <f:textbox default="${it.plugin.includes}" />
+                    </f:entry>
+                    <f:entry title="Excludes" field="excludes" help="/plugin/cloud-jenkins-plugin/help/excludes.html">
+                        <f:textbox default="${it.plugin.excludes}"  />
+                    </f:entry>
+                    <f:entry title="">
+                        <f:submit name="storeButton" value="Store ..."/>
+                    </f:entry>
+                </f:section>
+            </f:form>
+            <f:form name="restore" method="post" action="restore" enctype="multipart/form-data">
+                <f:section title="Restore Jenkins configuration from SAP HANA Cloud document service">
+                    <f:description>A 'Reload Configuration from Disk' is triggered after loading the configuration form SAP HANA Cloud document service.</f:description>
+                    <f:entry title="">
+                        <f:submit value="Restore"/>
+                    </f:entry>
+                </f:section>
+            </f:form>
+             <f:form name="download" method="post" action="download" enctype="multipart/form-data">
+                <f:section title="Download Jenkins configuration from SAP HANA Cloud document service" >
+                    <f:entry title="" help="/plugin/cloud-jenkins-plugin/help/download.html">
+                        <f:submit value="Download"/>
+                    </f:entry>
+                </f:section>
+            </f:form>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

@@ -1,0 +1,29 @@
+<!--
+	confirm delete action
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout"  xmlns:f="/lib/form"  xmlns:st="jelly:stapler">
+    <l:layout permission="${app.ADMINISTER}" norefresh="true">
+        <st:include it="${app}" page="sidepanel.jelly"/>
+        <l:main-panel>
+           <j:set var="filesToDeleteList" value="${it.filesToDeleteSummary}"/> 
+            <j:choose>    
+                <j:when  test="${filesToDeleteList.isEmpty()}">
+                    <p style="color:black;font-size:18px;">
+                       There are no files to delete in the given path.
+                    </p>
+                </j:when>
+                <j:otherwise>
+                    <h1>${it.displayName} &#8211; Confirm Files to Delete</h1>
+                    <f:form name="confirmation" method="post" action="confirmDelete" enctype="multipart/form-data">
+                        <f:entry title="">
+                            <f:submit name="deleteButton" value="Delete"/>
+                        </f:entry>
+                    </f:form>
+                    <pre id="confirmDeleteFileList">
+                        ${filesToDeleteList}
+                    </pre>   
+                 </j:otherwise>
+             </j:choose>
+         </l:main-panel>
+    </l:layout>
+</j:jelly>

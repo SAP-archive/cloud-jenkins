@@ -1,0 +1,19 @@
+<!--
+	confirm store action
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout"  xmlns:f="/lib/form"  xmlns:st="jelly:stapler">
+    <l:layout permission="${app.ADMINISTER}" norefresh="true">
+        <st:include it="${app}" page="sidepanel.jelly"/>
+        <l:main-panel>
+            <h1>${it.displayName} &#8211; Confirm files to store</h1>
+            <f:form name="confirmation" method="post" action="confirmSave" enctype="multipart/form-data">
+                <f:entry title="">
+                    <f:submit name="storeButton" value="Store"/>
+                </f:entry>
+            </f:form>
+            <pre id="confirmStoreFileList">
+                ${it.filesToSaveSummary}
+            </pre>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

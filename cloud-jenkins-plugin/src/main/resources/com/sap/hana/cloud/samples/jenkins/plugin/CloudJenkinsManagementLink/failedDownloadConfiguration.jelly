@@ -1,0 +1,11 @@
+<!--
+    The user tried to download configuration that doesn't exist.
+-->
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <l:layout>
+        <l:main-panel>
+            <h1>Download Jenkins Configuration Failed.</h1>
+            <p>The configuration file doesn't exist in the Document Service.</p>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

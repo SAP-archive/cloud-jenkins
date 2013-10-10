@@ -1,0 +1,156 @@
+<!--
+  #%L
+  SAP HANA Cloud Platform Samples - Cloud Jenkins
+  %%
+  Copyright (C) 2013 SAP AG
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sap.hana.cloud.samples.jenkins</groupId>
+    <artifactId>cloud-jenkins-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <description>The Cloud Jenkins sample project builds a web archive for running Jenkins in a developer account of the SAP HANA Cloud Platform</description>
+
+    <organization>
+        <name>SAP AG</name>
+        <url>http://www.sap.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>SAP HANA Cloud Platform</name>
+            <url>http://hana.ondemand.com</url>
+            <organization>SAP AG</organization>
+            <organizationUrl>http://www.sap.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <url>https://github.com/SAP/cloud-jenkins</url>
+
+    <prerequisites>
+        <maven>3.0.4</maven>
+    </prerequisites>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <jenkins-version>1.526</jenkins-version>
+        <maven-hpi-plugin-version>1.95</maven-hpi-plugin-version>
+        <maven-stapler-plugin-version>1.16</maven-stapler-plugin-version>
+        <sap.cloud.sdk.version>1.34.25.3</sap.cloud.sdk.version>
+        <!-- Best results if the opencmis.version matches the version supplied by the neo sdk. -->
+        <opencmis.version>0.9.0</opencmis.version>
+    </properties>
+
+    <modules>
+        <module>cloud-jenkins-defaults</module>
+        <module>cloud-jenkins-storage</module>
+        <module>cloud-jenkins-plugin</module>
+        <module>cloud-jenkins-bootstrap</module>
+        <module>cloud-jenkins-webarchive</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.maven.plugin</groupId>
+                <artifactId>emma-maven-plugin</artifactId>
+                <version>1.2</version>
+                <executions>
+                    <execution>
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <goal>instrument</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <classesDirectory>${project.build.directory}/generated-classes/emma/classes</classesDirectory>
+                    <systemPropertyVariables>
+                        <emma.coverage.out.file>${project.build.directory}/coverage.ec</emma.coverage.out.file>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.16</version>
+                <configuration>
+                    <classesDirectory>${project.build.directory}/generated-classes/emma/classes</classesDirectory>
+                    <systemPropertyVariables>
+                        <emma.coverage.out.file>${project.build.directory}/coverage-it.ec</emma.coverage.out.file>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+               <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.14.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.8</version>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.sonatype.maven.plugin</groupId>
+                                        <artifactId>emma-maven-plugin</artifactId>
+                                        <versionRange>[1.2,)</versionRange>
+                                        <goals>
+                                            <goal>instrument</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

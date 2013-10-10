@@ -1,0 +1,9 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <l:layout>
+        <l:main-panel>
+            <p style="color:black;font-size:18px;">
+                Please enter a valid folder or file to delete.
+            </p>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

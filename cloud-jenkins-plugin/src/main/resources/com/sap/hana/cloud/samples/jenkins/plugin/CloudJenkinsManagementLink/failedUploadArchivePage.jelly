@@ -1,0 +1,8 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <l:layout>
+        <l:main-panel>
+            <h1>Upload of file to Jenkins failed</h1>
+            <p style="color:black;font-size:16px;">Please specify a valid zip file.</p>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

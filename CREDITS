@@ -1,0 +1,802 @@
+This program includes the following third party open source or other free download components.
+The third party licensors of these components may provide additional license rights,
+terms and conditions and/or require certain notices as described below.
+
+The cloud icon is freeware from the "Addictive Flavour" icon pack by Oliver Twardowski.
+It has been copied from http://findicons.com/icon/418451/cloud?id=419357.
+
+"Java Concurrency in Practice" book annotations (net.jcip:jcip-annotations:1.0 - http://jcip.net/) 
+Licensed under  the Creative Commons Attribution License (http://creativecommons.org/licenses/by/2.5)
+
+Jetty :: Http Utility (org.eclipse.jetty:jetty-http:8.1.9.v20130131 - http://www.eclipse.org/jetty/jetty-http) 
+Licensed under Apache Software License - Version 2.0 and Eclipse Public License - Version 1.0 
+
+Jetty :: IO Utility (org.eclipse.jetty:jetty-io:8.1.9.v20130131 - http://www.eclipse.org/jetty/jetty-io) 
+Licensed under Apache Software License - Version 2.0 and Eclipse Public License - Version 1.0
+
+Jetty :: Utilities (org.eclipse.jetty:jetty-util:8.1.9.v20130131 - http://www.eclipse.org/jetty/jetty-util) 
+Licensed under Apache Software License - Version 2.0 and Eclipse Public License - Version 1.0
+
+Jetty :: Websocket (org.eclipse.jetty:jetty-websocket:8.1.9.v20130131 - http://www.eclipse.org/jetty/jetty-websocket) 
+Licensed under Apache Software License - Version 2.0 and Eclipse Public License - Version 1.0
+
+Jetty Utilities (org.mortbay.jetty:jetty-util:6.1.26 - http://www.eclipse.org/jetty/jetty-parent/project/jetty-util) 
+Licensed under Apache Software License - Version 2.0 and Eclipse Public License - Version 1.0
+
+JNA-POSIX (org.jruby.ext.posix:jna-posix:1.0.3 - no url defined) 
+Licensed under Common Public License - v 1.0, GNU General Public License Version 2 and GNU Lesser General Public License Version 2.1
+
+jnr-posix (com.github.jnr:jnr-posix:3.0.0 - http://nexus.sonatype.org/oss-repository-hosting.html/jnr-posix) 
+Licensed under Common Public License - v 1.0, GNU General Public License Version 2 and GNU Lesser General Public License Version 2.1
+
+JavaMail API (compat) (javax.mail:mail:1.4.4 - http://kenai.com/projects/javamail/mail) 
+Licensed under CDDL/(GPLv2+CE)
+
+MXP1: Xml Pull Parser 3rd Edition (XPP3) (xpp3:xpp3:1.1.4c - http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/) 
+Licensed under Apache Software License, version 1.1 and Indiana University Extreme! Lab Software License, vesion 1.1.1
+
+MXP1: Xml Pull Parser 3rd Edition (XPP3) (xpp3:xpp3_min:1.1.4c - http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/) 
+Licensed under Indiana University Extreme! Lab Software License, vesion 1.1.1
+
+Jenkins remoting layer (org.jenkins-ci.main:remoting:2.30 - http://jenkins-ci.org/remoting/) 
+Licensed under Apache License 2.0 and The MIT license
+
+XML Commons External Components XML APIs (xml-apis:xml-apis:1.4.01 - http://xml.apache.org/commons/components/external/) 
+Licensed under The Apache Software License, Version 2.0 , The SAX License and The W3C License
+
+AOP alliance (aopalliance:aopalliance:1.0 - http://aopalliance.sourceforge.net) 
+Licensed under Public Domain
+
+ASM Analysis (org.ow2.asm:asm-analysis:4.0 - http://asm.objectweb.org/asm-analysis/) 
+Licensed under BSD
+
+ASM Commons (org.ow2.asm:asm-commons:4.0 - http://asm.objectweb.org/asm-commons/) 
+Licensed under BSD
+
+ASM Core (org.ow2.asm:asm:4.0 - http://asm.objectweb.org/asm/) 
+Licensed under BSD
+
+ASM Tree (org.ow2.asm:asm-tree:4.0 - http://asm.objectweb.org/asm-tree/) 
+Licensed under BSD
+
+ASM Util (org.ow2.asm:asm-util:4.0 - http://asm.objectweb.org/asm-util/) 
+Licensed under BSD
+
+Acegi Security Core (org.acegisecurity:acegi-security:1.0.7 - http://acegisecurity.org/acegi-security/) 
+Licensed under The Apache Software License, Version 2.0
+
+Aether API (org.eclipse.aether:aether-api:0.9.0.M2 - http://www.eclipse.org/aether/aether-api/) 
+Licensed under Eclipse Public License, Version 1.0
+
+Aether Connector Wagon (org.eclipse.aether:aether-connector-wagon:0.9.0.M2 - http://www.eclipse.org/aether/aether-connector-wagon/) 
+Licensed under Eclipse Public License, Version 1.0
+
+Aether Implementation (org.eclipse.aether:aether-impl:0.9.0.M2 - http://www.eclipse.org/aether/aether-impl/) 
+Licensed under Eclipse Public License, Version 1.0
+
+Aether SPI (org.eclipse.aether:aether-spi:0.9.0.M2 - http://www.eclipse.org/aether/aether-spi/) 
+Licensed under Eclipse Public License, Version 1.0
+
+Aether Utilities (org.eclipse.aether:aether-util:0.9.0.M2 - http://www.eclipse.org/aether/aether-util/) 
+Licensed under Eclipse Public License, Version 1.0
+
+Annotation Indexer (org.jenkins-ci:annotation-indexer:1.4 - http://jenkins-ci.org/annotation-indexer/) 
+Licensed under MIT License
+
+Ant Plugin (org.jenkins-ci.plugins:ant:1.2 - http://wiki.jenkins-ci.org/display/JENKINS/Ant+Plugin) 
+Licensed under The MIT license
+
+AntLR (antlr:antlr:2.7.6 - http://www.antlr.org/) 
+Licensed under The BSD License
+
+Apache Ant Core (org.apache.ant:ant:1.8.3 - http://ant.apache.org/ant/) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Ant Launcher (org.apache.ant:ant-launcher:1.8.3 - http://ant.apache.org/ant-launcher/) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Log4j (log4j:log4j:1.2.17 - http://logging.apache.org/log4j/1.2/) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: API (org.apache.maven.wagon:wagon-provider-api:2.4 - http://maven.apache.org/wagon/wagon-provider-api) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: FTP Provider (org.apache.maven.wagon:wagon-ftp:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-ftp) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: File Provider (org.apache.maven.wagon:wagon-file:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-file) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: HTTP Provider (org.apache.maven.wagon:wagon-http:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-http) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: HTTP Shared Library (org.apache.maven.wagon:wagon-http-shared:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-http-shared) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: HTTP Shared Library 4 (org.apache.maven.wagon:wagon-http-shared4:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-http-shared4) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: SSH Common Library (org.apache.maven.wagon:wagon-ssh-common:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-ssh-common) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: SSH External Provider (org.apache.maven.wagon:wagon-ssh-external:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-ssh-external) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: SSH Provider (org.apache.maven.wagon:wagon-ssh:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-ssh) 
+Licensed under The Apache Software License, Version 2.0
+
+Apache Maven Wagon :: Providers :: WebDav Provider (org.apache.maven.wagon:wagon-webdav-jackrabbit:2.4 - http://maven.apache.org/wagon/wagon-providers/wagon-webdav-jackrabbit) 
+Licensed under The Apache Software License, Version 2.0
+
+Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs (org.bouncycastle:bcpkix-jdk15on:1.48 - http://www.bouncycastle.org/java.html) 
+Licensed under Bouncy Castle Licence
+
+Bouncy Castle Provider (org.bouncycastle:bcprov-jdk15on:1.48 - http://www.bouncycastle.org/java.html) 
+Licensed under Bouncy Castle Licence
+
+Bridge method injection annotations (com.infradna.tool:bridge-method-annotation:1.8 - no url defined) 
+Licensed under MIT License
+
+CDI APIs (javax.enterprise:cdi-api:1.0 - http://www.seamframework.org/Weld/cdi-api) 
+Licensed under Apache License, Version 2.0
+
+CSS Parser (net.sourceforge.cssparser:cssparser:0.9.5 - http://cssparser.sourceforge.net/) 
+Licensed under GNU Lesser General Public License
+
+CodeMirror library from http://codemirror.net/ (org.kohsuke.stapler:stapler-adjunct-codemirror:1.2 - no url defined) 
+Licensed under MIT License
+
+Commons BeanUtils (commons-beanutils:commons-beanutils:1.8.3 - http://commons.apache.org/beanutils/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons CLI (commons-cli:commons-cli:1.2 - http://commons.apache.org/cli/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Codec (commons-codec:commons-codec:1.8 - http://commons.apache.org/proper/commons-codec/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Collections (commons-collections:commons-collections:3.2.1 - http://commons.apache.org/collections/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Digester (commons-digester:commons-digester:2.1 - http://commons.apache.org/digester/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Exec (org.apache.commons:commons-exec:1.1 - http://commons.apache.org/exec/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons FileUpload (commons-fileupload:commons-fileupload:1.2.1 - http://commons.apache.org/fileupload/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons IO (commons-io:commons-io:1.3.2 - http://jakarta.apache.org/commons/io/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons IO (commons-io:commons-io:1.4 - http://commons.apache.org/io/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons JEXL (org.jenkins-ci:commons-jexl:1.1-jenkins-20111212 - http://jakarta.apache.org/commons/jexl/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Lang (commons-lang:commons-lang:2.6 - http://commons.apache.org/lang/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Lang (org.apache.commons:commons-lang3:3.1 - http://commons.apache.org/lang/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Logging (commons-logging:commons-logging:1.1.3 - http://commons.apache.org/proper/commons-logging/) 
+Licensed under The Apache Software License, Version 2.0
+
+Commons Net (commons-net:commons-net:3.1 - http://commons.apache.org/net/) 
+Licensed under The Apache Software License, Version 2.0
+
+Constant Pool Scanner (org.jenkins-ci:constant-pool-scanner:1.1 - https://github.com/jenkinsci/constant-pool-scanner) 
+Licensed under NetBeans CDDL/GPL
+
+Custom Acess Modifier annotations (org.kohsuke:access-modifier-annotation:1.4 - http://kohsuke.org/access-modifier/access-modifier-annotation/) 
+Licensed under MIT License
+
+Discovery (commons-discovery:commons-discovery:0.4 - http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) 
+Licensed under The Apache Software License, Version 2.0
+
+Doxia :: Sink API (org.apache.maven.doxia:doxia-sink-api:1.0 - http://maven.apache.org/doxia/doxia/doxia-sink-api) 
+Licensed under The Apache Software License, Version 2.0
+
+EasyMock (org.easymock:easymock:2.4 - http://www.easymock.org) 
+Licensed under MIT License
+
+EasyStream (net.sf.jsignature.io-tools:easystream:1.2.12 - http://io-tools.googlecode.com/svn/www/io-tools/easystream/) 
+Licensed under The BSD Software License
+
+Embeddable daemonization library (org.kohsuke:akuma:1.9 - http://kohsuke.org/akuma/) 
+Licensed under MIT license
+
+FindBugs-jsr305 (com.google.code.findbugs:jsr305:1.3.9 - http://findbugs.sourceforge.net/) 
+Licensed under The Apache Software License, Version 2.0
+
+Findbugs Annotations under Apache License (com.github.stephenc.findbugs:findbugs-annotations:1.3.9-1 - http://stephenc.github.com/findbugs-annotations) 
+Licensed under Apache License, Version 2.0
+
+Ganymed SSH2 for Java (org.jenkins-ci:trilead-ssh2:build214-jenkins-3 - http://www.ganymed.ethz.ch/ssh2/) 
+Licensed under BSD style license
+
+Geb Core (org.codehaus.geb:geb-implicit-assertions:0.7.2 - http://www.gebish.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Groovy (org.codehaus.groovy:groovy-all:1.8.5 - http://groovy.codehaus.org/) 
+Licensed under The Apache Software License, Version 2.0
+
+Guava: Google Core Libraries for Java (com.google.guava:guava:11.0.1 - http://code.google.com/p/guava-libraries/guava) 
+Licensed under The Apache Software License, Version 2.0
+
+Hamcrest Core (org.hamcrest:hamcrest-core:1.3 - https://github.com/hamcrest/JavaHamcrest/hamcrest-core) 
+Licensed under New BSD License
+
+Hamcrest library (org.hamcrest:hamcrest-library:1.3 - https://github.com/hamcrest/JavaHamcrest/hamcrest-library) 
+Licensed under New BSD License
+
+HtmlUnit (net.sourceforge.htmlunit:htmlunit:2.12 - http://htmlunit.sourceforge.net) 
+Licensed under Apache License, Version 2.0
+
+HtmlUnit (org.jenkins-ci:htmlunit:2.6-jenkins-6 - http://htmlunit.sourceforge.net) 
+Licensed under Apache License, Version 2.0
+
+HtmlUnit Core JS (net.sourceforge.htmlunit:htmlunit-core-js:2.12 - http://htmlunit.sourceforge.net) 
+Licensed under Mozilla Public License version 2.0
+
+HtmlUnit Core JS (org.jvnet.hudson:htmlunit-core-js:2.6-hudson-1 - http://htmlunit.sourceforge.net) 
+Licensed under Mozilla Public License version 1.1
+
+HttpClient (commons-httpclient:commons-httpclient:3.1 - http://jakarta.apache.org/httpcomponents/httpclient-3.x/) 
+Licensed under Apache License
+
+HttpClient (org.apache.httpcomponents:httpclient:4.2.5 - http://hc.apache.org/httpcomponents-client) 
+Licensed under Apache License
+
+HttpCore (org.apache.httpcomponents:httpcore:4.2.4 - http://hc.apache.org/httpcomponents-core-ga) 
+Licensed under Apache License
+
+HttpMime (org.apache.httpcomponents:httpmime:4.2.3 - http://hc.apache.org/httpcomponents-client) 
+Licensed under Apache License
+
+Hudson Maven Artifact Manager (org.jenkins-ci.lib:lib-jenkins-maven-artifact-manager:1.2 - https://hudson.dev.java.net/lib/lib-jenkins-maven-artifact-manager/) 
+Licensed under The Apache Software License, Version 2.0
+
+Instance Identity (org.jenkins-ci.modules:instance-identity:1.3 - http://jenkins-ci.org/plugin/instance-identity/) 
+Licensed under MIT License
+
+JAX-WS (JSR-224) Reference Implementation (com.sun.xml.ws:jaxws-rt:2.1.7 - https://jax-ws.dev.java.net//) 
+Licensed under Dual license consisting of the CDDL v1.0 and GPL v2
+
+JLine (jline:jline:0.9.94 - http://jline.sourceforge.net) 
+Licensed under BSD
+
+JNLP launcher (org.jvnet.hudson:netx:0.5-hudson-2 - no url defined) 
+Licensed under GNU LESSER GENERAL PUBLIC LICENSE 2.1
+
+JSON (JavaScript Object Notation) (org.json:json:20080701 - http://www.json.org/java/index.html) 
+Licensed under provided without support or warranty
+
+JSch (com.jcraft:jsch:0.1.44-1 - http://www.jcraft.com/jsch/) 
+Licensed under Revised BSD
+
+JTidy (org.jvnet.hudson:jtidy:4aug2000r7-dev-hudson-1 - http://jtidy.sourceforge.net) 
+Licensed under Java HTML Tidy License
+
+JUnit (junit:junit:4.11 - http://junit.org) 
+Licensed under Common Public License Version 1.0
+
+JZlib (com.jcraft:jzlib:1.1.2 - http://www.jcraft.com/jzlib/) 
+Licensed under Revised BSD
+
+Jackrabbit WebDAV Library (org.apache.jackrabbit:jackrabbit-webdav:2.5.2 - http://jackrabbit.apache.org/jackrabbit-webdav/) 
+Licensed under The Apache Software License, Version 2.0
+
+Java Native Access (net.java.dev.jna:jna:3.3.0-jenkins-3 - no url defined) 
+Licensed under GNU LESSER GENERAL PUBLIC LICENSE 2.1
+
+Java Native Access Platform (net.java.dev.jna:platform:3.4.0 - https://github.com/twall/jna) 
+Licensed under LGPL, version 2.1
+
+Java Servlet API (javax.servlet:javax.servlet-api:3.0.1 - http://servlet-spec.java.net) 
+Licensed under CDDL + GPLv2 with classpath exception
+
+Java binding for libpam.so (org.kohsuke:libpam4j:1.6 - http://kohsuke.org/libpam4j/) 
+Licensed under The MIT license
+
+JavaMail mock objects (org.jvnet.mock-javamail:mock-javamail:1.7 - https://mock-javamail.dev.java.net/) 
+Licensed under Common Development And Distribution License
+
+Jenkins CLI (org.jenkins-ci.main:cli:1.526 - http://jenkins-ci.org/pom/cli/) 
+Licensed under The MIT license
+
+Jenkins Mailer Plugin (org.jenkins-ci.plugins:mailer:1.5 - http://wiki.jenkins-ci.org/display/JENKINS/Mailer) 
+Licensed under The MIT license
+
+Jenkins Maven 2 PluginManager interceptor (org.jenkins-ci.main.maven:maven-interceptor:1.4 - http://jenkins-ci.org/maven-modules/maven-interceptor/) 
+Licensed under The MIT license
+
+Jenkins Maven Embedder (org.jenkins-ci.lib:lib-jenkins-maven-embedder:3.11 - http://jenkins-ci.org/lib-jenkins-maven-embedder/) 
+Licensed under Apache License, Version 2.0
+
+Jenkins Maven2 CLI agent (org.jenkins-ci.main.maven:maven-agent:1.4 - http://jenkins-ci.org/maven-modules/maven-agent/) 
+Licensed under The MIT license
+
+Jenkins Maven3 CLI Agent (org.jenkins-ci.main.maven:maven3-agent:1.4 - http://jenkins-ci.org/maven-modules/maven3-agent/) 
+Licensed under The MIT license
+
+Jenkins Maven3 Interceptor (org.jenkins-ci.main.maven:maven3-interceptor:1.4 - http://jenkins-ci.org/maven-modules/maven3-interceptor/) 
+Licensed under The MIT license
+
+Jenkins Maven3 Interceptor Commons (org.jenkins-ci.main.maven:maven3-interceptor-commons:1.4 - http://jenkins-ci.org/maven-modules/maven3-interceptor-commons/) 
+Licensed under The MIT license
+
+Jenkins Maven3.1.x CLI Agent (org.jenkins-ci.main.maven:maven31-agent:1.4 - http://jenkins-ci.org/maven-modules/maven31-agent/) 
+Licensed under The MIT license
+
+Jenkins Maven3.1.x Interceptor (org.jenkins-ci.main.maven:maven31-interceptor:1.4 - http://jenkins-ci.org/maven-modules/maven31-interceptor/) 
+Licensed under The MIT license
+
+Jenkins core (org.jenkins-ci.main:jenkins-core:1.526 - http://jenkins-ci.org/pom/jenkins-core/) 
+Licensed under The MIT license
+
+Jenkins war (org.jenkins-ci.main:jenkins-war:1.526 - http://jenkins-ci.org/pom/jenkins-war/) 
+Licensed under The MIT license
+
+JmDNS (org.jenkins-ci:jmdns:3.4.0-jenkins-3 - no url defined) 
+Licensed under Apache License, Version 2.0
+
+Localizer (org.jvnet.localizer:localizer:1.10 - no url defined) 
+Licensed under Licensed under The MIT license
+
+Maven Aether Provider (org.apache.maven:maven-aether-provider:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-aether-provider) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Artifact (org.apache.maven:maven-artifact:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-artifact) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Compat (org.apache.maven:maven-compat:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-compat) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Core (org.apache.maven:maven-core:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-core) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Embedder (org.apache.maven:maven-embedder:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-embedder) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Integration plugin (org.jenkins-ci.main:maven-plugin:1.526 - http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin) 
+Licensed under The MIT license
+
+Maven Model (org.apache.maven:maven-model:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-model) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Model Builder (org.apache.maven:maven-model-builder:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-model-builder) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Plugin API (org.apache.maven:maven-plugin-api:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-plugin-api) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Reporting API (org.apache.maven.reporting:maven-reporting-api:3.0 - http://maven.apache.org/shared/maven-reporting-api/) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Repository Metadata Model (org.apache.maven:maven-repository-metadata:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-repository-metadata) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Settings (org.apache.maven:maven-settings:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-settings) 
+Licensed under The Apache Software License, Version 2.0
+
+Maven Settings Builder (org.apache.maven:maven-settings-builder:3.1.0 - http://maven.apache.org/ref/3.1.0/maven-settings-builder) 
+Licensed under The Apache Software License, Version 2.0
+
+Mockito (org.mockito:mockito-all:1.9.5 - http://www.mockito.org) 
+Licensed under The MIT License
+
+Neko HTML (net.sourceforge.nekohtml:nekohtml:1.9.13 - http://nekohtml.sourceforge.net/) 
+Licensed under The Apache Software License, Version 2.0
+
+OS X slave installer (org.jenkins-ci.modules:launchd-slave-installer:1.2 - http://jenkins-ci.org/plugin/launchd-slave-installer/) 
+Licensed under MIT License
+
+OSGi R4 Core Bundle (org.apache.felix:org.osgi.core:1.0.0 - http://felix.apache.org/org.osgi.core/) 
+Licensed under The Apache Software License, Version 2.0
+
+OWASP HTML Sanitizer (org.kohsuke:owasp-html-sanitizer:r88 - http://kohsuke.org/owasp-html-sanitizer/) 
+Licensed under MIT license
+
+OpenCMIS Client API (org.apache.chemistry.opencmis:chemistry-opencmis-client-api:0.9.0 - http://chemistry.apache.org/java/chemistry-opencmis-client/chemistry-opencmis-client-api/) 
+Licensed under Apache 2
+
+OpenCMIS Client Bindings Implementation (org.apache.chemistry.opencmis:chemistry-opencmis-client-bindings:0.9.0 - http://chemistry.apache.org/java/chemistry-opencmis-client/chemistry-opencmis-client-bindings/) 
+Licensed under Apache 2
+
+OpenCMIS Client Implementation (org.apache.chemistry.opencmis:chemistry-opencmis-client-impl:0.9.0 - http://chemistry.apache.org/java/chemistry-opencmis-client/chemistry-opencmis-client-impl/) 
+Licensed under Apache 2
+
+OpenCMIS Commons API (org.apache.chemistry.opencmis:chemistry-opencmis-commons-api:0.9.0 - http://chemistry.apache.org/java/chemistry-opencmis-commons/chemistry-opencmis-commons-api/) 
+Licensed under Apache 2
+
+OpenCMIS Commons Implementation (org.apache.chemistry.opencmis:chemistry-opencmis-commons-impl:0.9.0 - http://chemistry.apache.org/java/chemistry-opencmis-commons/chemistry-opencmis-commons-impl/) 
+Licensed under Apache 2
+
+PhantomJSDriver (com.github.detro.ghostdriver:phantomjsdriver:1.0.4 - https://github.com/detro/ghostdriver) 
+Licensed under The BSD 2-Clause License
+
+Plexus :: Component Annotations (org.codehaus.plexus:plexus-component-annotations:1.5.5 - http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/) 
+Licensed under The Apache Software License, Version 2.0
+
+Plexus Cipher: encryption/decryption Component (org.sonatype.plexus:plexus-cipher:1.7 - http://spice.sonatype.org/plexus-cipher) 
+Licensed under Apache Public License 2.0
+
+Plexus Classworlds (org.codehaus.plexus:plexus-classworlds:2.3 - http://plexus.codehaus.org/plexus-classworlds/) 
+Licensed under The Apache Software License, Version 2.0
+
+Plexus Common Utilities (org.codehaus.plexus:plexus-utils:3.0.10 - http://plexus.codehaus.org/plexus-utils) 
+Licensed under The Apache Software License, Version 2.0
+
+Plexus Default Interactivity Handler (org.codehaus.plexus:plexus-interactivity-api:1.0-alpha-6 - no url defined) 
+Licensed under MIT License
+
+Plexus Interpolation API (org.codehaus.plexus:plexus-interpolation:1.16 - http://plexus.codehaus.org/plexus-components/plexus-interpolation) 
+Licensed under The Apache Software License, Version 2.0
+
+Plexus Security Dispatcher Component (org.sonatype.plexus:plexus-sec-dispatcher:1.3 - http://spice.sonatype.org/plexus-sec-dispatcher) 
+Licensed under Apache Public License 2.0
+
+PuTTY support for Trilead SSH2 library (org.kohsuke:trilead-putty-extension:1.2 - http://trilead-putty-extension.kohsuke.org/) 
+Licensed under MIT license
+
+Pure Java - COM bridge (org.kohsuke.jinterop:j-interop:2.0.6-kohsuke-1 - no url defined) 
+Licensed under LGPL v3.0 (http://www.gnu.org/licenses/lgpl-3.0.html)
+
+Pure Java - COM bridge (org.kohsuke.jinterop:j-interopdeps:2.0.6-kohsuke-1 - no url defined) 
+Licensed under LGPL v3.0 (http://www.gnu.org/licenses/lgpl-3.0.html)
+
+Robust HTTP client library (org.jvnet.robust-http-client:robust-http-client:1.2 - http://robust-http-client.kohsuke.org/) 
+Licensed under MIT license
+
+SLF4J API Module (org.slf4j:slf4j-api:1.6.1 - http://www.slf4j.org) 
+Licensed under MIT License
+
+SLF4J API Module (org.slf4j:slf4j-api:1.7.5 - http://www.slf4j.org) 
+Licensed under MIT License
+
+SLF4J JDK14 Binding (org.slf4j:slf4j-jdk14:1.7.4 - http://www.slf4j.org) 
+Licensed under MIT License
+
+SLF4J LOG4J-12 Binding (org.slf4j:slf4j-log4j12:1.7.5 - http://www.slf4j.org) 
+Licensed under MIT License
+
+SSH CLI client authenticator (org.jenkins-ci.modules:ssh-cli-auth:1.2 - http://jenkins-ci.org/plugin/ssh-cli-auth/) 
+Licensed under MIT License
+
+Servlet Specification 2.5 API (org.mortbay.jetty:servlet-api-2.5:6.1.9 - http://jetty.mortbay.org) 
+Licensed under CDDL 1.0
+
+SezPoz Library (net.java.sezpoz:sezpoz:1.9 - http://sezpoz.java.net/sezpoz/) 
+Licensed under CDDL or GPL 2 with Classpath Exception
+
+Simple API for CSS (org.w3c.css:sac:1.3 - http://www.w3.org/Style/CSS/SAC/) 
+Licensed under The W3C Software License
+
+Sisu Guice - Core Library (org.sonatype.sisu:sisu-guice:3.1.0 - http://code.google.com/p/google-guice/sisu-guice/) 
+Licensed under The Apache Software License, Version 2.0
+
+Slave installer (org.jenkins-ci.modules:slave-installer:1.2 - http://jenkins-ci.org/plugin/slave-installer/) 
+Licensed under MIT License
+
+SnakeYAML (org.yaml:snakeyaml:1.8 - http://www.snakeyaml.org) 
+Licensed under Apache License Version 2.0
+
+Spring Framework: AOP (org.springframework:spring-aop:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Beans (org.springframework:spring-beans:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Context (org.springframework:spring-context:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Context Support (org.springframework:spring-context-support:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Core (org.springframework:spring-core:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: DAO (org.springframework:spring-dao:1.2.9 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: JDBC (org.springframework:spring-jdbc:1.2.9 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Web (org.springframework:spring-web:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Spring Framework: Web MVC (org.springframework:spring-webmvc:2.5.6.SEC03 - http://www.springframework.org) 
+Licensed under The Apache Software License, Version 2.0
+
+StAX API (stax:stax-api:1.0.1 - http://stax.codehaus.org/) 
+Licensed under The Apache Software License, Version 2.0
+
+Stapler (org.kohsuke.stapler:stapler:1.214 - http://stapler.kohsuke.org/stapler/) 
+Licensed under 2-clause BSD license
+
+Stapler Groovy module (org.kohsuke.stapler:stapler-groovy:1.214 - http://stapler.kohsuke.org/stapler-groovy/) 
+Licensed under 2-clause BSD license
+
+Stapler JRebel module (org.kohsuke.stapler:stapler-jrebel:1.214 - http://stapler.kohsuke.org/stapler-jrebel/) 
+Licensed under 2-clause BSD license
+
+Stapler Jelly module (org.kohsuke.stapler:stapler-jelly:1.214 - http://stapler.kohsuke.org/stapler-jelly/) 
+Licensed under 2-clause BSD license
+
+Stax2 API (org.codehaus.woodstox:stax2-api:3.1.1 - http://woodstox.codehaus.org/StAX2) 
+Licensed under The BSD License
+
+TXW2 Runtime (com.sun.xml.txw2:txw2:20110809 - http://txw.java.net/txw2/) 
+Licensed under CDDL v1.1 / GPL v2 dual license
+
+Test annotations (org.jvnet.hudson:test-annotations:1.0 - http://hudson-labs.org/test-annotations/) 
+Licensed under MIT License
+
+Test harness for Jenkins and plugins (org.jenkins-ci.main:jenkins-test-harness:1.526 - http://jenkins-ci.org/pom/jenkins-test-harness/) 
+Licensed under The MIT license
+
+The Netty Project (io.netty:netty:3.5.2.Final - http://netty.io/) 
+Licensed under Apache License, Version 2.0
+
+Timeline component at http://code.google.com/p/zeroclipboard/ (org.kohsuke.stapler:stapler-adjunct-zeroclipboard:1.1.7-1 - http://kohsuke.org/stapler-adjunct-zeroclipboard/) 
+Licensed under MIT License
+
+Timeline component at http://www.simile-widgets.org/timeline/ (org.kohsuke.stapler:stapler-adjunct-timeline:1.4 - no url defined) 
+Licensed under BSD License
+
+Type arithmetic library for Java5 (org.jvnet:tiger-types:1.3 - no url defined) 
+Licensed under Common Development And Distribution License (CDDL Version 1.0)
+
+Upstart slave installer (org.jenkins-ci.modules:upstart-slave-installer:1.1 - http://jenkins-ci.org/plugin/upstart-slave-installer/) 
+Licensed under MIT License
+
+Utility around Java Crypto API (org.jenkins-ci:crypto-util:1.1 - http://jenkins-ci.org/crypto-util/) 
+Licensed under MIT License
+
+Version 1.0) (GNU General Public Library) Streaming API for XML (javax.xml.stream:stax-api:1.0-2 - no url defined) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL
+
+Version 1.0) (GPLv2 with classpath exception) MIME streaming extension (org.jvnet:mimepull:1.3 - no url defined) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL
+
+Version 1.0) Extended StAX API (org.jvnet.staxex:stax-ex:1.2 - https://stax-ex.dev.java.net/) 
+Licensed under Common Development And Distribution License (CDDL
+
+Version 1.0) JSR-250 Common Annotations for the JavaTM Platform (javax.annotation:jsr250-api:1.0 - http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL
+
+Version 1.0) SOAP with Attachments API Package (javax.xml.soap:saaj-api:1.3 - http://java.sun.com/webservices/saaj/index.jsp) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL
+
+Version number manipulation (org.jenkins-ci:version-number:1.1 - http://jenkins-ci.org/version-number/) 
+Licensed under MIT License
+
+WMI for j-interop (org.jenkins-ci:jinterop-wmi:1.1 - http://jenkins-ci.org/jinterop-wmi/) 
+Licensed under MIT License
+
+Windows slave installer (org.jenkins-ci.modules:windows-slave-installer:1.3 - http://jenkins-ci.org/plugin/windows-slave-installer/) 
+Licensed under MIT License
+
+Woodstox (org.codehaus.woodstox:woodstox-core-asl:4.2.0 - http://woodstox.codehaus.org) 
+Licensed under The Apache Software License, Version 2.0
+
+Woodstox (org.codehaus.woodstox:wstx-asl:3.2.9 - http://woodstox.codehaus.org) 
+Licensed under The Apache Software License, Version 2.0
+
+XML Pull Parsing API (xmlpull:xmlpull:1.1.3.1 - http://www.xmlpull.org) 
+Licensed under Public Domain
+
+XStream Core (org.jvnet.hudson:xstream:1.4.4-jenkins-3 - http://codehaus.org/xstream-parent/xstream/) 
+Licensed under BSD style
+
+Xalan Java (xalan:xalan:2.7.1 - http://xml.apache.org/xalan-j/) 
+Licensed under The Apache Software License, Version 2.0
+
+Xalan Java Serializer (xalan:serializer:2.7.1 - http://xml.apache.org/xalan-j/) 
+Licensed under The Apache Software License, Version 2.0
+
+Xerces2 Java Parser (xerces:xercesImpl:2.9.1 - http://xerces.apache.org/xerces2-j) 
+Licensed under The Apache Software License, Version 2.0
+
+activation (org.jvnet.hudson:activation:1.1.1-hudson-1 - no url defined) 
+Licensed under The MIT license
+
+args4j (args4j:args4j:2.0.21 - http://args4j.dev.java.net/args4j/) 
+Licensed under MIT License
+
+asm3 (org.kohsuke:asm3:3.3.0 - http://kohsuke.org/) 
+Licensed under BSD License
+
+cglib (cglib:cglib-nodep:2.1_3 - http://cglib.sourceforge.net/) 
+Licensed under  Apache License, Version 2.0
+
+commons-jelly (org.jenkins-ci:commons-jelly:1.1-jenkins-20120928 - http://jakarta.apache.org/commons/jelly/) 
+Licensed under The Apache Software License, Version 2.0
+
+commons-jelly-tags-define (org.jvnet.hudson:commons-jelly-tags-define:1.0.1-hudson-20071021 - no url defined) 
+Licensed under The MIT license
+
+commons-jelly-tags-fmt (commons-jelly:commons-jelly-tags-fmt:1.0 - no url defined) 
+Licensed under Apache License, Version 2.0
+
+commons-jelly-tags-xml (commons-jelly:commons-jelly-tags-xml:1.1 - http://jakarta.apache.org/commons/jelly/libs/xml/index.html) 
+Licensed under Apache License, Version 2.0
+
+configuration-bootstrap (com.sap.hana.cloud.samples.jenkins:configuration-bootstrap:0.1.0-SNAPSHOT - https://github.com/SAP/cloud-jenkins/configuration-bootstrap) 
+Licensed under The Apache Software License, Version 2.0
+
+configuration-storage (com.sap.hana.cloud.samples.jenkins:configuration-storage:0.1.0-SNAPSHOT - https://github.com/SAP/cloud-jenkins/configuration-storage) 
+Licensed under The Apache Software License, Version 2.0
+
+dom4j (org.jvnet.hudson.dom4j:dom4j:1.6.1-hudson-3 - http://dom4j.org) 
+Licensed under The MIT license
+
+embedded-rhino-debugger (org.jvnet.hudson:embedded-rhino-debugger:1.2 - https://hudson.dev.java.net/lib/embedded-rhino-debugger/) 
+Licensed under Mozilla Public License Version 1.1 and GNU General Public License Version 2.0
+
+embedded_su for Java (com.sun.solaris:embedded_su4j:1.1 - no url defined) 
+Licensed under MIT license
+
+ezmorph (net.sf.ezmorph:ezmorph:1.0.6 - http://ezmorph.sourceforge.net) 
+Licensed under The Apache Software License, Version 2.0
+
+init (org.jvnet.hudson:task-reactor:1.2 - https://hudson.dev.java.net/lib/task-reactor/) 
+Licensed under The MIT license
+
+jCIFS (org.samba.jcifs:jcifs:1.3.14-kohsuke-1 - http://jcifs.samba.org) 
+Licensed under GNU Lesser General Public License, version 2.1
+
+jansi (org.fusesource.jansi:jansi:1.9 - http://jansi.fusesource.org/jansi) 
+Licensed under The Apache Software License, Version 2.0
+
+javadoc (org.jenkins-ci.plugins:javadoc:1.0 - http://wiki.jenkins-ci.org/display/JENKINS/Javadoc+Plugin) 
+Licensed under The MIT license
+
+javax.inject (javax.inject:javax.inject:1 - http://code.google.com/p/atinject/) 
+Licensed under The Apache Software License, Version 2.0
+
+jaxb-api (javax.xml.bind:jaxb-api:2.1 - no url defined) 
+Licensed under Common Development and Distribution License (CDDL) https://glassfish.dev.java.net/public/CDDL+GPL.html
+
+jaxb-impl (com.sun.xml.bind:jaxb-impl:2.1.11 - no url defined) 
+Licensed under GPL version 2.0/CDDL
+
+jaxen (jaxen:jaxen:1.1-beta-11 - http://jaxen.codehaus.org/) 
+Licensed under https://fisheye.codehaus.org/browse/jaxen/trunk/jaxen/LICENSE.txt?r=1128
+
+jaxws-api (javax.xml.ws:jaxws-api:2.1 - no url defined) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+
+jbcrypt (org.mindrot:jbcrypt:0.3m - http://www.mindrot.org/) 
+Licensed under ISC/BSD License
+
+jcommon (jfree:jcommon:1.0.12 - http://www.jfree.org/jcommon/) 
+Licensed under GNU Lesser General Public Licence
+
+jetty (org.mortbay.jetty:jetty:6.1.26 - no url defined) 
+Licensed under Licensed under the Apache License, Version 2.0
+
+jffi (com.github.jnr:jffi:1.2.7 - http://github.com/jnr/jffi) 
+Licensed under The Apache Software License, Version 2.0
+
+jfreechart (jfree:jfreechart:1.0.9 - http://www.jfree.org/jfreechart/) 
+Licensed under GNU Lesser General Public Licence
+
+jinterop-proxy (org.kohsuke.jinterop:jinterop-proxy:1.1 - no url defined) 
+Licensed under MIT license
+
+jnr-constants (com.github.jnr:jnr-constants:0.8.4 - http://github.com/jnr/jnr-constants) 
+Licensed under The Apache Software License, Version 2.0
+
+jnr-ffi (com.github.jnr:jnr-ffi:1.0.4 - http://github.com/jnr/jnr-ffi) 
+Licensed under The Apache Software License, Version 2.0
+
+jnr-x86asm (com.github.jnr:jnr-x86asm:1.0.2 - http://github.com/jnr/jnr-x86asm) 
+Licensed under MIT License
+
+json-lib (org.kohsuke.stapler:json-lib:2.4-jenkins-2 - http://json-lib.sourceforge.net) 
+Licensed under The Apache Software License, Version 2.0
+
+jsoup (org.jsoup:jsoup:1.7.1 - http://jsoup.org/) 
+Licensed under The MIT License
+
+jstl (javax.servlet:jstl:1.1.0 - no url defined) 
+Licensed under Apache License, Version 2.0
+
+libzfs-java (org.jvnet.libzfs:libzfs:0.5 - https://zfs.dev.java.net/) 
+Licensed under COMMON DEVELOPMENT AND DISTRIBUTION LICENSE
+
+log4j (log4j:log4j:1.2.9 - no url defined) 
+Licensed under The Apache Software License, Version 2.0
+
+maven2.1-interceptor (org.jvnet.hudson:maven2.1-interceptor:1.2 - https://hudson.dev.java.net/extras/maven2.1-interceptor/) 
+Licensed under MIT License
+
+memory-monitor (org.jenkins-ci:memory-monitor:1.7 - http://jenkins-ci.org/memory-monitor/) 
+Licensed under MIT License
+
+mx4j-tools (mx4j:mx4j-tools:3.0.1 - no url defined) 
+Licensed under MX4J License version 1.0
+
+neo-sdk-core-api (com.sap.hana.cloud:neo-sdk-core-api:1.34.25.3 - no url defined) 
+Licensed under SAP DEVELOPER LICENSE
+
+org.eclipse.sisu.inject (org.eclipse.sisu:org.eclipse.sisu.inject:0.0.0.M5 - http://www.eclipse.org/sisu/org.eclipse.sisu.inject/) 
+Licensed under Eclipse Public License, Version 1.0
+
+org.eclipse.sisu.plexus (org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M5 - http://www.eclipse.org/sisu/org.eclipse.sisu.plexus/) 
+Licensed under Eclipse Public License, Version 1.0
+
+oro (oro:oro:2.0.8 - no url defined) 
+Licensed under The Apache Software License, Version 2.0
+
+relaxngDatatype (relaxngDatatype:relaxngDatatype:20020414 - no url defined) 
+Licensed under Public Domain
+
+resolver (com.sun.org.apache.xml.internal:resolver:20050927 - no url defined) 
+Licensed under  Apache License, Version 2.0
+
+saaj-impl (com.sun.xml.messaging.saaj:saaj-impl:1.3.3 - no url defined) 
+Licensed under GPL Version 2/CDDL
+
+selenium-android-driver (org.seleniumhq.selenium:selenium-android-driver:2.33.0 - http://selenium.googlecode.com/selenium-android-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-api (org.seleniumhq.selenium:selenium-api:2.33.0 - http://selenium.googlecode.com/selenium-api/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-chrome-driver (org.seleniumhq.selenium:selenium-chrome-driver:2.33.0 - http://selenium.googlecode.com/selenium-chrome-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-firefox-driver (org.seleniumhq.selenium:selenium-firefox-driver:2.33.0 - http://selenium.googlecode.com/selenium-firefox-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-htmlunit-driver (org.seleniumhq.selenium:selenium-htmlunit-driver:2.33.0 - http://selenium.googlecode.com/selenium-htmlunit-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-ie-driver (org.seleniumhq.selenium:selenium-ie-driver:2.33.0 - http://selenium.googlecode.com/selenium-ie-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-iphone-driver (org.seleniumhq.selenium:selenium-iphone-driver:2.33.0 - http://selenium.googlecode.com/selenium-iphone-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-java (org.seleniumhq.selenium:selenium-java:2.33.0 - http://selenium.googlecode.com/selenium-java/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-jetty-repacked (org.seleniumhq.selenium:jetty-repacked:7.6.1 - http://github.com/krosenvold/convention-bean-factory) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-remote-driver (org.seleniumhq.selenium:selenium-remote-driver:2.33.0 - http://selenium.googlecode.com/selenium-remote-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-safari-driver (org.seleniumhq.selenium:selenium-safari-driver:2.33.0 - http://selenium.googlecode.com/selenium-safari-driver/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-server (org.seleniumhq.selenium:selenium-server:2.33.0 - http://selenium.googlecode.com/selenium-server/) 
+Licensed under The Apache Software License, Version 2.0
+
+selenium-support (org.seleniumhq.selenium:selenium-support:2.33.0 - http://selenium.googlecode.com/selenium-support/) 
+Licensed under The Apache Software License, Version 2.0
+
+streambuffer (com.sun.xml.stream.buffer:streambuffer:0.9 - no url defined) 
+Licensed under CDDL https://jwsdp.dev.java.net/CDDLv1.0.html
+
+v1.0) JavaBeans Activation Framework (JAF) (javax.activation:activation:1.1 - http://java.sun.com/products/javabeans/jaf/index.jsp) 
+Licensed under Common Development and Distribution License (CDDL
+
+webbit (org.webbitserver:webbit:0.4.14 - http://webbitserver.org/) 
+Licensed under BSD License
+
+windows-package-checker (org.kohsuke:windows-package-checker:1.0 - http://kohsuke.org/windows-package-checker/) 
+Licensed under MIT license
+
+windows-remote-command (org.jenkins-ci:windows-remote-command:1.3 - http://jenkins-ci.org/windows-remote-command/) 
+Licensed under MIT License
+
+winp (org.jvnet.winp:winp:1.16 - http://kohsuke.org/winp/) 
+Licensed under MIT license
+
