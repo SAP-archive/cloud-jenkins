@@ -71,7 +71,7 @@ In the "Manage Jenkins Installation on Cloud" UI, you can:
 As next steps, you may want to
 - Add a new build job on your Jenkins instance.
   Don't forget to also store the configuration in the SAP HANA Cloud document service ("Manage Jenkins" > "Manage Jenkins Installation on Cloud") so that the new job is still available after a restart.
-- Read the this [blog article](TODO)
+- Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform)
 
 ## Project Overview
 
