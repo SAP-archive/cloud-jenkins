@@ -165,8 +165,30 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         final ListFilesVisitor visitor = new ListFilesVisitor();
         if (StringUtils.isNotBlank(deleteFilePath)) {
             new DirScanner.Full().scan(fileToDelete, visitor);
+            return addParentPathtoDisplay(fileToDelete, visitor.filesToString());
         }
         return visitor.filesToString();
+    }
+
+    /*
+     * The directory scanner does not append the parent path to the files scanned. So this method
+     * adds the parent path to the visited files. This method will later to be deleted once the
+     * "delete" functionality supports file patterns.
+     */
+    private String addParentPathtoDisplay(final File fileToDelete, final String scannedFiles) {
+        final StringBuilder finalFilesScanned = new StringBuilder();
+        if (StringUtils.isNotBlank(scannedFiles)) {
+            final String[] scannedDirs = scannedFiles.split("\n");
+            final String parent = fileToDelete.getParentFile().getName();
+
+            for (String child : scannedDirs) {
+                if (!configurationFileManager.getRootDirectory().getName().equals(parent)) {
+                    child = parent + "/" + child;
+                }
+                finalFilesScanned.append(child + "\n");
+            }
+        }
+        return finalFilesScanned.toString();
     }
 
     public String getFilesToSaveSummary() throws IOException {
