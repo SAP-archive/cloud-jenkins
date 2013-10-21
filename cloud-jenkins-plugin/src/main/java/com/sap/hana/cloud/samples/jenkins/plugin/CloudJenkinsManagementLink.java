@@ -165,15 +165,10 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         final ListFilesVisitor visitor = new ListFilesVisitor();
         if (StringUtils.isNotBlank(deleteFilePath)) {
             new DirScanner.Full().scan(fileToDelete, visitor);
-<<<<<<< master
-=======
             final String parent = fileToDelete.getParentFile().getName();
             return getModifiedFileListToDelete(parent, visitor.filesToString());
->>>>>>> 3dba4a8 Fixed the delete preview to show full path - Added JUnit tests -Incorporated code review comments
         }
         return visitor.filesToString();
-<<<<<<< master
-=======
     }
 
     /*
@@ -182,7 +177,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
      * directory.
      */
     String getModifiedFileListToDelete(final String parent, final String scannedFiles) {
-        final StringBuilder finalFilesScanned = new StringBuilder();
+        final StringBuilder filesScannedResult = new StringBuilder();
         if (StringUtils.isNotBlank(scannedFiles)) {
             final String[] scannedFileNames = scannedFiles.split("\n");
 
@@ -190,11 +185,10 @@ public class CloudJenkinsManagementLink extends ManagementLink {
                 if (!configurationFileManager.getRootDirectory().getName().equals(parent)) {
                     child = parent + "/" + child;
                 }
-                finalFilesScanned.append(child + "\n");
+                filesScannedResult.append(child + "\n");
             }
         }
-        return finalFilesScanned.toString();
->>>>>>> 3dba4a8 Fixed the delete preview to show full path - Added JUnit tests -Incorporated code review comments
+        return filesScannedResult.toString();
     }
 
     public String getFilesToSaveSummary() throws IOException {
