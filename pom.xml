@@ -2,7 +2,7 @@
   #%L
   SAP HANA Cloud Platform Samples - Cloud Jenkins
   %%
-  Copyright (C) 2013 SAP AG
+  Copyright (C) 2013, 2014 SAP AG
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -63,7 +63,7 @@
         <jenkins-version>1.526</jenkins-version>
         <maven-hpi-plugin-version>1.95</maven-hpi-plugin-version>
         <maven-stapler-plugin-version>1.16</maven-stapler-plugin-version>
-        <sap.cloud.sdk.version>1.34.25.3</sap.cloud.sdk.version>
+        <sap.cloud.sdk.version>1.43.20.3</sap.cloud.sdk.version>
         <!-- Best results if the opencmis.version matches the version supplied by the neo sdk. -->
         <opencmis.version>0.9.0</opencmis.version>
     </properties>

@@ -9,13 +9,6 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 
 1. [Apache Maven](http://maven.apache.org/) 3.0.4 or newer
 2. A [SAP HANA Cloud Platform developer account](https://help.hana.ondemand.com/help/frameset.htm?65d74d39cb3a4bf8910cd36ec54d2b99.html)
-3. The [SAP HANA Cloud SDK 1.34.25.3](https://tools.hana.ondemand.com/sdk/neo-sdk-javaweb-1.34.25.3.zip).
-   Download the SDK and extract it to a folder.
-   Go to that folder in a console and enter the following command:
-   ```
-   mvn install:install-file -Dfile=api/neo-sdk-core-api-1.34.25.3.jar -DartifactId=neo-sdk-core-api -DgroupId=com.sap.hana.cloud -Dversion=1.34.25.3 -Dpackaging=jar
-   ```
-   This makes the Java API of the of the SAP HANA Cloud Platform available in the Maven build.
 
 
 ## Quick start
@@ -85,7 +78,7 @@ The project consists of the following modules:
 
 ## Copyright and license
 
-Copyright 2013 SAP AG
+Copyright 2013, 2014 SAP AG
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.

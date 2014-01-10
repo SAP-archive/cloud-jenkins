@@ -2,7 +2,7 @@
   #%L
   SAP HANA Cloud Platform Samples - Cloud Jenkins
   %%
-  Copyright (C) 2013 SAP AG
+  Copyright (C) 2013, 2014 SAP AG
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -45,8 +45,8 @@
         </dependency>
         <!-- SAP HANA Cloud Platform SDK dependencies -->
         <dependency>
-            <groupId>com.sap.hana.cloud</groupId>
-            <artifactId>neo-sdk-core-api</artifactId>
+            <groupId>com.sap.cloud</groupId>
+            <artifactId>neo-java-web-api</artifactId>
             <version>${sap.cloud.sdk.version}</version>
             <scope>provided</scope>
         </dependency>
