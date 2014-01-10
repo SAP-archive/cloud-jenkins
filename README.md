@@ -50,44 +50,40 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 1. Clone the project from Github:
 
     ```
-	git clone https://github.com/sap/cloud-jenkins.git;
-	cd cloud-jenkins
-	```
+    git clone https://github.com/sap/cloud-jenkins.git;
+    cd cloud-jenkins
+    ```
 
-2. Build the project
+2. Build the project:
 
-	```
+    ```
     mvn clean install
     ```
 
 3. Deploy the web archive to your SAP HANA Cloud Platform developer account:
-   If you are behind a proxy you have to set the following environment variables before you execute the neo command.
-	 
-	    export http_proxy=http://<HTTP proxy hostname>:<HTTP proxy port>
-	    export https_proxy=https://<HTTPS proxy hostname>:<HTTPS proxy port> 
-	    export no_proxy="localhost"  
 
-	  ```
-	  <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
-	  ```
+    ```
+    <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
+    ```
     The neo tool (`neo.sh` or `neo.bat`) is part of the SAP HANA Cloud SDK and located in the `tools` folder.
+    If you access the internet via a proxy, see this documentation page: [Setting Up the Console Client](https://help.hana.ondemand.com/help/frameset.htm?7613dee4711e1014839a8273b0e91070.html)
 
 4. Configure the permissions for the Cloud Jenkins deployment:
-	 - Go to the [SAP HANA Cloud Platform cockpit](https://account.hanatrial.ondemand.com/cockpit/)
-	 - On the "Authorizations" tab, enter your user ID and click on "Show Roles"
-	 - Assign your user to the "admin" role of the "jenkins" application.
+    - Go to the [SAP HANA Cloud Platform cockpit](https://account.hanatrial.ondemand.com/cockpit/)
+    - On the "Authorizations" tab, enter your user ID and click on "Show Assignments"
+    - Assign your user to the "admin" role of the "jenkins" application.
 
-5. Start the "jenkins" application on the "Applications" tab. The application status page also shows the URL of the application.
-           
+5. Start the "jenkins" application on the "Java Applications" tab. The application status page also shows the URL of the application.
+
 ### Result
 
 As a result, you get:
 
 - A running Jenkins instance with
 - A build job "install-git" which is automatically triggered on Jenkins startup and installs Git, and
-- A plugin installed that provides the "Manage Jenkins Installation on Cloud" link under "Manage Jenkins"
+- A plugin installed that adds the "Manage Jenkins Installation on Cloud" configuration page under "Manage Jenkins"
 
-In the "Manage Jenkins Installation on Cloud" UI, you can:
+On the "Manage Jenkins Installation on Cloud" configuration page, you can:
 
 - Upload files to Jenkins
 - Delete files from Jenkins
@@ -98,7 +94,7 @@ In the "Manage Jenkins Installation on Cloud" UI, you can:
 As next steps, you may want to
 - Add a new build job on your Jenkins instance.
   Don't forget to also store the configuration in the SAP HANA Cloud document service ("Manage Jenkins" > "Manage Jenkins Installation on Cloud") so that the new job is still available after a restart.
-- Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform)
+- Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform).
 
 ## Project Overview
 
