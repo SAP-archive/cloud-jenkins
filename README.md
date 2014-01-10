@@ -8,8 +8,42 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 ## Prerequisites
 
 1. [Apache Maven](http://maven.apache.org/) 3.0.4 or newer
-2. A [SAP HANA Cloud Platform developer account](https://help.hana.ondemand.com/help/frameset.htm?65d74d39cb3a4bf8910cd36ec54d2b99.html)
 
+2. A [Maven settings.xml](http://maven.apache.org/settings.html) which allows access to the Maven repository of the Jenkins project.
+   To configure this, you can e.g. insert the following configuration into your settings.xml file:
+
+    ```
+    <profiles>
+        <profile>
+            <id>default-repositories</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2/</url>
+                </repository>
+                <repository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>http://repo.jenkins-ci.org/public/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>http://repo.jenkins-ci.org/public/</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    ```
+
+3. A [SAP HANA Cloud Platform developer account](https://help.hana.ondemand.com/help/frameset.htm?65d74d39cb3a4bf8910cd36ec54d2b99.html)
 
 ## Quick start
 
