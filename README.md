@@ -8,59 +8,82 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 ## Prerequisites
 
 1. [Apache Maven](http://maven.apache.org/) 3.0.4 or newer
-2. A [SAP HANA Cloud Platform developer account](https://help.hana.ondemand.com/help/frameset.htm?65d74d39cb3a4bf8910cd36ec54d2b99.html)
-3. The [SAP HANA Cloud SDK 1.34.25.3](https://tools.hana.ondemand.com/sdk/neo-sdk-javaweb-1.34.25.3.zip).
-   Download the SDK and extract it to a folder.
-   Go to that folder in a console and enter the following command:
-   ```
-   mvn install:install-file -Dfile=api/neo-sdk-core-api-1.34.25.3.jar -DartifactId=neo-sdk-core-api -DgroupId=com.sap.hana.cloud -Dversion=1.34.25.3 -Dpackaging=jar
-   ```
-   This makes the Java API of the of the SAP HANA Cloud Platform available in the Maven build.
 
+2. A [Maven settings.xml](http://maven.apache.org/settings.html) which allows access to the Maven repository of the Jenkins project.
+   To configure this, you can e.g. insert the following configuration into your settings.xml file:
+
+    ```
+    <profiles>
+        <profile>
+            <id>default-repositories</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2/</url>
+                </repository>
+                <repository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>http://repo.jenkins-ci.org/public/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://repo.maven.apache.org/maven2/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>repo.jenkins-ci.org</id>
+                    <url>http://repo.jenkins-ci.org/public/</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    ```
+
+3. A [SAP HANA Cloud Platform developer account](https://help.hana.ondemand.com/help/frameset.htm?65d74d39cb3a4bf8910cd36ec54d2b99.html)
 
 ## Quick start
 
 1. Clone the project from Github:
 
     ```
-	git clone https://github.com/sap/cloud-jenkins.git;
-	cd cloud-jenkins
-	```
+    git clone https://github.com/sap/cloud-jenkins.git;
+    cd cloud-jenkins
+    ```
 
-2. Build the project
+2. Build the project:
 
-	```
+    ```
     mvn clean install
     ```
 
 3. Deploy the web archive to your SAP HANA Cloud Platform developer account:
-   If you are behind a proxy you have to set the following environment variables before you execute the neo command.
-	 
-	    export http_proxy=http://<HTTP proxy hostname>:<HTTP proxy port>
-	    export https_proxy=https://<HTTPS proxy hostname>:<HTTPS proxy port> 
-	    export no_proxy="localhost"  
 
-	  ```
-	  <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
-	  ```
+    ```
+    <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
+    ```
     The neo tool (`neo.sh` or `neo.bat`) is part of the SAP HANA Cloud SDK and located in the `tools` folder.
+    If you access the internet via a proxy, see this documentation page: [Setting Up the Console Client](https://help.hana.ondemand.com/help/frameset.htm?7613dee4711e1014839a8273b0e91070.html)
 
 4. Configure the permissions for the Cloud Jenkins deployment:
-	 - Go to the [SAP HANA Cloud Platform cockpit](https://account.hanatrial.ondemand.com/cockpit/)
-	 - On the "Authorizations" tab, enter your user ID and click on "Show Roles"
-	 - Assign your user to the "admin" role of the "jenkins" application.
+    - Go to the [SAP HANA Cloud Platform cockpit](https://account.hanatrial.ondemand.com/cockpit/)
+    - On the "Authorizations" tab, enter your user ID and click on "Show Assignments"
+    - Assign your user to the "admin" role of the "jenkins" application.
 
-5. Start the "jenkins" application on the "Applications" tab. The application status page also shows the URL of the application.
-           
+5. Start the "jenkins" application on the "Java Applications" tab. The application status page also shows the URL of the application.
+
 ### Result
 
 As a result, you get:
 
 - A running Jenkins instance with
 - A build job "install-git" which is automatically triggered on Jenkins startup and installs Git, and
-- A plugin installed that provides the "Manage Jenkins Installation on Cloud" link under "Manage Jenkins"
+- A plugin installed that adds the "Manage Jenkins Installation on Cloud" configuration page under "Manage Jenkins"
 
-In the "Manage Jenkins Installation on Cloud" UI, you can:
+On the "Manage Jenkins Installation on Cloud" configuration page, you can:
 
 - Upload files to Jenkins
 - Delete files from Jenkins
@@ -71,7 +94,7 @@ In the "Manage Jenkins Installation on Cloud" UI, you can:
 As next steps, you may want to
 - Add a new build job on your Jenkins instance.
   Don't forget to also store the configuration in the SAP HANA Cloud document service ("Manage Jenkins" > "Manage Jenkins Installation on Cloud") so that the new job is still available after a restart.
-- Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform)
+- Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform).
 
 ## Project Overview
 
@@ -85,7 +108,7 @@ The project consists of the following modules:
 
 ## Copyright and license
 
-Copyright 2013 SAP AG
+Copyright 2013, 2014 SAP AG
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
