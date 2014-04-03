@@ -3,7 +3,7 @@
   #%L
   SAP HANA Cloud Platform Samples - Cloud Jenkins
   %%
-  Copyright (C) 2013 SAP AG
+  Copyright (C) 2013, 2014 SAP AG
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@
   -->
 <hudson.plugins.git.GitTool_-DescriptorImpl plugin="git-client@1.1.2">
   <installations class="hudson.plugins.git.GitTool-array">
-    <hudson.plugins.git.GitTool>
-      <name>Default</name>
-      <home>/usr/sap/ljs/home/git/bin/git</home>
+    <org.jenkinsci.plugins.gitclient.JGitTool>
+      <name>jgit</name>
+      <home>jgit</home>
       <properties/>
-    </hudson.plugins.git.GitTool>
+    </org.jenkinsci.plugins.gitclient.JGitTool>
   </installations>
 </hudson.plugins.git.GitTool_-DescriptorImpl>

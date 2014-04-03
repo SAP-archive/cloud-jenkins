@@ -80,7 +80,7 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 As a result, you get:
 
 - A running Jenkins instance with
-- A build job "install-git" which is automatically triggered on Jenkins startup and installs Git, and
+- A Preconfiguration suitable for running on SAP HANA Cloud Platform (proxy, security, JGit, Maven settings), and
 - A plugin installed that adds the "Manage Jenkins Installation on Cloud" configuration page under "Manage Jenkins"
 
 On the "Manage Jenkins Installation on Cloud" configuration page, you can:
