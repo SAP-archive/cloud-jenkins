@@ -65,7 +65,7 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
     ```
     <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --uri-encoding UTF-8 --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
     ```
-    The neo tool (`neo.sh` or `neo.bat`) is part of the SAP HANA Cloud SDK and located in the `tools` folder.
+    The neo tool (`neo.sh` or `neo.bat`) is part of the SAP HANA Cloud Platform SDK and located in the `tools` folder.
     If you access the internet via a proxy, see this documentation page: [Setting Up the Console Client](https://help.hana.ondemand.com/help/frameset.htm?7613dee4711e1014839a8273b0e91070.html)
 
 4. Configure the permissions for the Cloud Jenkins deployment:
@@ -87,21 +87,21 @@ On the "Manage Jenkins Installation on Cloud" configuration page, you can:
 
 - Upload files to Jenkins
 - Delete files from Jenkins
-- Store the Jenkins configuration in the SAP HANA Cloud document service so that it survives a restart
+- Store the Jenkins configuration in the SAP HANA Cloud Platform document service so that it survives a restart
 
 ### Next steps
 
 As next steps, you may want to
 - Add a new build job on your Jenkins instance.
-  Don't forget to also store the configuration in the SAP HANA Cloud document service ("Manage Jenkins" > "Manage Jenkins Installation on Cloud") so that the new job is still available after a restart.
+  Don't forget to also store the configuration in the SAP HANA Cloud Platform document service ("Manage Jenkins" > "Manage Jenkins Installation on Cloud") so that the new job is still available after a restart.
 - Read the this [blog article](http://scn.sap.com/community/developer-center/cloud-platform/blog/2013/10/11/run-your-own-jenkins-on-sap-hana-cloud-platform).
 
 ## Project Overview
 
 The project consists of the following modules:
 
-1. *cloud-jenkins-bootstrap*: This module contains the bootstrapping logic which restores the Jenkins configuratation from the SAP HANA Cloud document service before Jenkins is started.
-2. *cloud-jenkins-storage*: This module contains the logic to store the Jenkins configuration in the SAP HANA Cloud document service.
+1. *cloud-jenkins-bootstrap*: This module contains the bootstrapping logic which restores the Jenkins configuratation from the SAP HANA Cloud Platform document service before Jenkins is started.
+2. *cloud-jenkins-storage*: This module contains the logic to store the Jenkins configuration in the SAP HANA Cloud Platform document service.
 3. *cloud-jenkins-defaults*: This module contains the configuration which is used on first startup of the Cloud Jenkins.
 4. *cloud-jenkins-plugin*: This module contains the Cloud Jenkins plug-in. It provides the "Manage Cloud Jenkins Configuration" user interface.
 5. *cloud-jenkins-webarchive*: This module builds the Jenkins web archive that is ready to use in a SAP HANA Cloud Platform developer account.
