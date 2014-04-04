@@ -63,7 +63,7 @@ The Cloud Jenkins overcomes this limitation by storing the configuration in the 
 3. Deploy the web archive to your SAP HANA Cloud Platform developer account:
 
     ```
-    <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
+    <path to neo tool> deploy --host hanatrial.ondemand.com --account <your developer account> --application jenkins --uri-encoding UTF-8 --user <your user ID> --source cloud-jenkins-webarchive/target/ROOT.war
     ```
     The neo tool (`neo.sh` or `neo.bat`) is part of the SAP HANA Cloud SDK and located in the `tools` folder.
     If you access the internet via a proxy, see this documentation page: [Setting Up the Console Client](https://help.hana.ondemand.com/help/frameset.htm?7613dee4711e1014839a8273b0e91070.html)
