@@ -66,7 +66,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
 
     @Override
     public String getDescription() {
-        return "Save/restore Jenkins configuration in SAP HANA Cloud document service. Upload/remove files on disk.";
+        return "Save/restore Jenkins configuration in SAP HANA Cloud Platform document service. Upload/remove files on disk.";
     }
 
     public CloudJenkinsPlugin getPlugin() {

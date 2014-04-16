@@ -60,12 +60,12 @@
         <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
-        <jenkins-version>1.526</jenkins-version>
+        <jenkins-version>1.532.2</jenkins-version>
         <maven-hpi-plugin-version>1.95</maven-hpi-plugin-version>
         <maven-stapler-plugin-version>1.16</maven-stapler-plugin-version>
-        <sap.cloud.sdk.version>1.43.20.3</sap.cloud.sdk.version>
+        <sap.cloud.sdk.version>1.49.14.1</sap.cloud.sdk.version>
         <!-- Best results if the opencmis.version matches the version supplied by the neo sdk. -->
-        <opencmis.version>0.9.0</opencmis.version>
+        <opencmis.version>0.10.0</opencmis.version>
     </properties>
 
     <modules>
