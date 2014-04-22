@@ -46,7 +46,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
     private static final String URL_NAME = "manageInstallationOnCloud";
     private static final String TITLE = "Manage Jenkins Installation on Cloud";
 
-    private final ConfigurationFileManager configurationFileManager = new ConfigurationFileManager();
+    private ConfigurationFileManager configurationFileManager;
     private String deleteFilePath;
 
     @Override
@@ -73,12 +73,19 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         return CloudJenkinsPlugin.getInstance();
     }
 
+    private ConfigurationFileManager getConfigurationFileManager() {
+        if (configurationFileManager == null) {
+            configurationFileManager = new ConfigurationFileManager();
+        }
+        return configurationFileManager;
+    }
+
     public void doUpload(final StaplerRequest request, final StaplerResponse response) throws IOException,
             ServletException {
         String nextPage = "";
         final FileItem configArchive = request.getFileItem("jenkinsConfiguration.zip");
         try {
-            configurationFileManager.unzipFilesFrom(configArchive);
+            getConfigurationFileManager().unzipFilesFrom(configArchive);
         } catch (final ZipException e) {
             nextPage = "/failedUploadArchivePage";
         }
@@ -90,7 +97,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         execute(request, response, "/failedDownloadConfiguration", new IORunnable() {
             @Override
             public void run() throws IOException, ServletException {
-                final InputStream is = configurationFileManager.downloadStoredConfiguration();
+                final InputStream is = getConfigurationFileManager().downloadStoredConfiguration();
                 if (is != null) {
                     try {
                         response.addHeader("Content-Disposition", "attachment; filename=jenkinsConfiguration.zip");
@@ -120,7 +127,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         execute(request, response, "", new IORunnable() {
             @Override
             public void run() throws IOException, ServletException {
-                configurationFileManager.deleteFile(deleteFilePath);
+                getConfigurationFileManager().deleteFile(deleteFilePath);
             }
         });
     }
@@ -144,7 +151,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
             @Override
             public void run() throws IOException, ServletException {
                 final CloudJenkinsPlugin plugin = getPlugin();
-                configurationFileManager.saveConfiguration(plugin.getIncludes(), plugin.getExcludes());
+                getConfigurationFileManager().saveConfiguration(plugin.getIncludes(), plugin.getExcludes());
             }
         });
     }
@@ -154,14 +161,14 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         execute(request, response, "", new IORunnable() {
             @Override
             public void run() throws IOException, ServletException {
-                configurationFileManager.restoreConfiguration();
+                getConfigurationFileManager().restoreConfiguration();
                 Hudson.getInstance().doReload();
             }
         });
     }
 
     public String getFilesToDeleteSummary() throws IOException {
-        final File fileToDelete = new File(configurationFileManager.getRootDirectory(), deleteFilePath);
+        final File fileToDelete = new File(getConfigurationFileManager().getRootDirectory(), deleteFilePath);
         final ListFilesVisitor visitor = new ListFilesVisitor();
         if (StringUtils.isNotBlank(deleteFilePath)) {
             new DirScanner.Full().scan(fileToDelete, visitor);
@@ -173,7 +180,7 @@ public class CloudJenkinsManagementLink extends ManagementLink {
         final CloudJenkinsPlugin plugin = getPlugin();
         final ListFilesVisitor visitor = new ListFilesVisitor();
         new DirScanner.Glob(plugin.getIncludes(), plugin.getExcludes()).scan(
-            configurationFileManager.getRootDirectory(), visitor);
+            getConfigurationFileManager().getRootDirectory(), visitor);
         return visitor.filesToString();
     }
 
