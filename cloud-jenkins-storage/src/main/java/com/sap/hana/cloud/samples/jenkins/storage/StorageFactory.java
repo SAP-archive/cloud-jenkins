@@ -23,14 +23,22 @@ package com.sap.hana.cloud.samples.jenkins.storage;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.sap.ecm.api.EcmService;
 
 public class StorageFactory {
+    private static Logger LOGGER = LoggerFactory.getLogger(StorageFactory.class);
+
     public static Storage createStorage() {
+        LOGGER.debug("createStorage");
         try {
             final EcmService ecmService = (EcmService) new InitialContext().lookup("java:comp/env/EcmService");
+            LOGGER.debug("createStorage: using ECMStorage");
             return new EcmStorage(ecmService);
         } catch (final NamingException e) {
+            LOGGER.error("createStorage: failed to lookup EcmService, using FileStorage instead", e);
             return new FileStorage();
         }
     }
