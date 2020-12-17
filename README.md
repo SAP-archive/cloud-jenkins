@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained.
+
 # SAP HANA Cloud Platform Samples - Cloud Jenkins
 
 The Cloud Jenkins sample project builds a web archive for running Jenkins in a developer account of the SAP HANA Cloud Platform.
